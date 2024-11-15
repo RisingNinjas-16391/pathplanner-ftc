@@ -616,13 +616,13 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
       widget.prefs.setString(PrefsKeys.macOSBookmark, bookmark);
     }
 
-    // Check if WPILib project
+    // Check if FTC project
     setState(() {
       if (fs.file(join(projectDir, 'build.gradle')).existsSync()) {
         _pathplannerDir = fs.directory(
-            join(projectDir, 'src', 'main', 'deploy', 'pathplanner'));
+            join(projectDir, 'src', 'main', 'assets', 'pathplanner'));
         _choreoDir =
-            fs.directory(join(projectDir, 'src', 'main', 'deploy', 'choreo'));
+            fs.directory(join(projectDir, 'src', 'main', 'assets', 'choreo'));
       } else {
         _pathplannerDir =
             fs.directory(join(projectDir, 'deploy', 'pathplanner'));
