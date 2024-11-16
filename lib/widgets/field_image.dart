@@ -9,6 +9,7 @@ enum OfficialField {
   rapidReact,
   chargedUp,
   crescendo,
+  intoTheDeep
 }
 
 class FieldImage {
@@ -28,6 +29,7 @@ class FieldImage {
       FieldImage.official(OfficialField.rapidReact),
       FieldImage.official(OfficialField.chargedUp),
       FieldImage.official(OfficialField.crescendo),
+      FieldImage.official(OfficialField.intoTheDeep),
     ];
     return _officialFields!;
   }

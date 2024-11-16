@@ -620,9 +620,9 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
     setState(() {
       if (fs.file(join(projectDir, 'build.gradle')).existsSync()) {
         _pathplannerDir = fs.directory(
-            join(projectDir, 'src', 'main', 'assets', 'pathplanner'));
+            join(projectDir, 'TeamCode', 'assets', 'pathplanner'));
         _choreoDir =
-            fs.directory(join(projectDir, 'src', 'main', 'assets', 'choreo'));
+            fs.directory(join(projectDir, 'TeamCode', 'assets', 'choreo'));
       } else {
         _pathplannerDir =
             fs.directory(join(projectDir, 'deploy', 'pathplanner'));
