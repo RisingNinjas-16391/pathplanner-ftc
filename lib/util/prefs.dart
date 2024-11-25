@@ -30,8 +30,8 @@ class PrefsKeys {
 
 class Defaults {
   static const int teamColor = 0xFF3F51B5;
-  static const double robotWidth = 0.9;
-  static const double robotLength = 0.9;
+  static const double robotWidth = 0.4572;
+  static const double robotLength = 0.4572;
   static const bool holonomicMode = true;
   static const double projectLeftWeight = 0.5;
   static const double editorTreeWeight = 0.5;
@@ -48,9 +48,9 @@ class Defaults {
       []; // Can't be const or user wont be able to add new folders
   static const bool snapToGuidelines = true;
   static const bool hidePathsOnHover = true;
-  static const double defaultMaxVel = 3.0;
-  static const double defaultMaxAccel = 3.0;
+  static const double defaultMaxVel = 1.0;
+  static const double defaultMaxAccel = 1.0;
   static const double defaultMaxAngVel = 540.0;
   static const double defaultMaxAngAccel = 720.0;
-  static const double maxModuleSpeed = 4.5;
+  static const double maxModuleSpeed = 1.0;
 }

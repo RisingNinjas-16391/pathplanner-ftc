@@ -9,6 +9,7 @@ enum OfficialField {
   rapidReact,
   chargedUp,
   crescendo,
+  intoTheDeep
 }
 
 class FieldImage {
@@ -28,6 +29,7 @@ class FieldImage {
       FieldImage.official(OfficialField.rapidReact),
       FieldImage.official(OfficialField.chargedUp),
       FieldImage.official(OfficialField.crescendo),
+      FieldImage.official(OfficialField.intoTheDeep)
     ];
     return _officialFields!;
   }
@@ -55,15 +57,25 @@ class FieldImage {
         name = 'Charged Up';
         break;
       case OfficialField.crescendo:
+        image = Image.asset(
+            'images/field24.png',
+            fit: BoxFit.contain,
+            filterQuality: FilterQuality.medium,
+          );
+          defaultSize = const ui.Size(3256, 1616);
+          pixelsPerMeter = 196.85;
+          name = 'Crescendo';
+          break;
+      case OfficialField.intoTheDeep:
       default:
         image = Image.asset(
-          'images/field24.png',
+          'images/ftcfield25.png',
           fit: BoxFit.contain,
           filterQuality: FilterQuality.medium,
         );
-        defaultSize = const ui.Size(3256, 1616);
-        pixelsPerMeter = 196.85;
-        name = 'Crescendo';
+        defaultSize = const ui.Size(4096, 4096);
+        pixelsPerMeter = 1119.86;
+        name = 'Into the Deep';
         break;
     }
     isCustom = false;

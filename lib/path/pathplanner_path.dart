@@ -65,12 +65,12 @@ class PathPlannerPath {
         useDefaultConstraints = true {
     waypoints.addAll([
       Waypoint(
-        anchor: const Point(2.0, 7.0),
-        nextControl: const Point(3.0, 7.0),
+        anchor: const Point(0.3, 1.5),
+        nextControl: const Point(0.8, 1.5),
       ),
       Waypoint(
-        prevControl: const Point(3.0, 6.0),
-        anchor: const Point(4.0, 6.0),
+        prevControl: const Point(1.0, 2.0),
+        anchor: const Point(0.5, 2.0),
       ),
     ]);
 
