@@ -84,6 +84,10 @@ class CommandGroupWidget extends StatelessWidget {
                         value: 'race',
                         child: Text('Race Group'),
                       ),
+                      PopupMenuItem(
+                        value: 'conditional',
+                        child: Text('Conditional Group'),
+                      ),
                     ],
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),

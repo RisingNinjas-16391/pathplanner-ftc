@@ -35,6 +35,7 @@ abstract class Command {
       'parallel' => ParallelCommandGroup.fromDataJson(data),
       'race' => RaceCommandGroup.fromDataJson(data),
       'deadline' => DeadlineCommandGroup.fromDataJson(data),
+      'conditional' => ConditionalCommand.fromDataJson(data),
       _ => null,
     };
   }
@@ -48,6 +49,7 @@ abstract class Command {
       'parallel' => ParallelCommandGroup(commands: commands ?? []),
       'race' => RaceCommandGroup(commands: commands ?? []),
       'deadline' => DeadlineCommandGroup(commands: commands ?? []),
+      'conditional' => ConditionalCommand(commands: commands ?? []),
       _ => null,
     };
   }

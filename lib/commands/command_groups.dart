@@ -117,3 +117,25 @@ class DeadlineCommandGroup extends CommandGroup {
   @override
   int get hashCode => Object.hash(type, commands);
 }
+
+class ConditionalCommand extends CommandGroup {
+  ConditionalCommand({required super.commands}) : super(type: 'conditional');
+
+  ConditionalCommand.fromDataJson(super.json)
+      : super.fromDataJson(type: 'conditional');
+
+  @override
+  Command clone() {
+    return ConditionalCommand(
+        commands: CommandGroup.cloneCommandsList(commands));
+  }
+
+  @override
+  bool operator ==(Object other) =>
+      other is ConditionalCommand &&
+      other.runtimeType == runtimeType &&
+      listEquals(other.commands, commands);
+
+  @override
+  int get hashCode => Object.hash(type, commands);
+}
