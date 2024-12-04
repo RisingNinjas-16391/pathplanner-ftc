@@ -50,6 +50,9 @@ class DCMotor {
   DCMotor.getNeoVortex(int numMotors)
       : this(12, 3.6, 211, 3.6, Units.rpmToRadsPerSec(6784), numMotors);
 
+  DCMotor.getGoBilda5203(int numMotors)
+      : this(12, 0.144, 9.2, 0.25, Units.rpmToRadsPerSec(6000), numMotors);
+
   num getCurrent(num speedRadPerSec, num voltage) {
     return -1.0 / kVRadPerSecPerVolt / rOhms * speedRadPerSec +
         1.0 / rOhms * voltage;
@@ -79,7 +82,8 @@ class DCMotor {
       'NEO' => DCMotor.getNEO(numMotors),
       'CIM' => DCMotor.getCIM(numMotors),
       'miniCIM' => DCMotor.getMiniCIM(numMotors),
-      _ => DCMotor.getKrakenX60(numMotors),
+      'goBilda5203' => DCMotor.getGoBilda5203(numMotors),
+      _ => DCMotor.getGoBilda5203(numMotors),
     };
   }
 }

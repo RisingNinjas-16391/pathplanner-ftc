@@ -477,6 +477,11 @@ class _RobotConfigSettingsState extends State<RobotConfigSettings> {
                                                       value: 'miniCIM',
                                                       child: Text('MiniCIM'),
                                                     ),
+                                                    DropdownMenuItem<String>(
+                                                      value: 'goBilda5203',
+                                                      child:
+                                                          Text('GoBilda5203'),
+                                                    ),
                                                   ],
                                                 ),
                                               ),

@@ -54,12 +54,12 @@ class PrefsKeys {
 
 class Defaults {
   static const int teamColor = 0xFF3F51B5;
-  static const double robotWidth = 0.9;
-  static const double robotLength = 0.9;
+  static const double robotWidth = 0.45;
+  static const double robotLength = 0.45;
   static const bool holonomicMode = true;
   static const double projectLeftWeight = 0.5;
   static const double editorTreeWeight = 0.5;
-  static const String ntServerAddress = '10.30.15.2';
+  static const String ntServerAddress = '192.168.43.1';
   static const bool treeOnRight = true;
   static const String pathSortOption = 'recent';
   static const String autoSortOption = 'recent';
@@ -72,20 +72,20 @@ class Defaults {
       []; // Can't be const or user wont be able to add new folders
   static const bool snapToGuidelines = true;
   static const bool hidePathsOnHover = true;
-  static const double defaultMaxVel = 3.0;
-  static const double defaultMaxAccel = 3.0;
+  static const double defaultMaxVel = 1.0;
+  static const double defaultMaxAccel = 1.0;
   static const double defaultMaxAngVel = 540.0;
   static const double defaultMaxAngAccel = 720.0;
   static const double defaultNominalVoltage = 12.0;
-  static const double robotMass = 74.088;
-  static const double robotMOI = 6.883;
+  static const double robotMass = 30.0;
+  static const double robotMOI = 3.0;
   static const double robotTrackwidth = 0.546;
-  static const double driveWheelRadius = 0.048;
+  static const double driveWheelRadius = 0.052;
   static const double driveGearing = 5.143;
   static const double maxDriveSpeed = 5.45;
-  static const String driveMotor = 'krakenX60';
-  static const double driveCurrentLimit = 60.0;
-  static const double wheelCOF = 1.2;
+  static const String driveMotor = 'goBilda5203';
+  static const double driveCurrentLimit = 20.0;
+  static const double wheelCOF = 0.5;
   static const bool showStates = false;
   static const bool showRobotDetails = false;
   static const bool showGrid = false;
